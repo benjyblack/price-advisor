@@ -7,7 +7,6 @@ const initialState = {
 };
 
 export default function products(state = initialState, action = {}) {
-  console.log('products passed action ' + action.type);
   switch (action.type) {
     case LOAD:
       return {
