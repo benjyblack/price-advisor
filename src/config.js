@@ -14,6 +14,12 @@ module.exports = Object.assign({
   port: process.env.PORT,
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
+  shopify: {
+    apiKey: '7ddf7eda68720be01db73214341e1f50',
+    apiSecret: '2d27a90eb99def15c37a5964601bf810',
+    scope: 'write_orders,read_products,read_customers',
+  },
+  dbURI: 'mongodb://localhost/price-comparer',
   app: {
     title: 'React Redux Example',
     description: 'All the modern best practices in one example.',
