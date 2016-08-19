@@ -31,7 +31,7 @@ export function requestAccessToken(shopName, code) {
     });
 };
 
-export default function get(shopName, accessToken, resourcePath, options) {
+export function get(shopName, accessToken, resourcePath, options) {
   return request
     .get(`${buildShopUrl(shopName)}/admin/${resourcePath}?${options}`)
     .set('X-Shopify-Access-Token', accessToken)

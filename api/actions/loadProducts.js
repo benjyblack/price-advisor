@@ -1,4 +1,4 @@
-import get from '../lib/ShopifyApiClient';
+import get from '../lib/shopify-client';
 
 export default function loadProducts(req) {
   return get(
